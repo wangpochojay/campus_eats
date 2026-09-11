@@ -21,13 +21,14 @@
 <section class="restaurants">
   <h2>Popular Restaurants</h2>
   <div class="restaurant-grid">
-<% restaurants.forEach(r => { %>
+    <% restaurants.forEach(r => { %>
       <div class="restaurant-card">
         <div class="avatar"><%= r.name.charAt(0) %></div>
         <h3><%= r.name %></h3>
         <p><%= r.cuisine %></p>
         <span class="rating-pill">★ <%= r.rating %></span>
-        <a href="/menu" class="btn">View Menu</a>
+        <!-- Updated link to use the dynamic restaurant ID -->
+        <a href="/restaurants/<%= r.id %>/menu" class="btn">View Menu</a>
       </div>
     <% }); %>
   </div>

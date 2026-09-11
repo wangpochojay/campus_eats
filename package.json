@@ -1,13 +1,12 @@
 {
   "name": "campus_eats",
   "version": "1.0.0",
-  "description": "",
+  "description": "├── config/                    (data layer support — DB connection, next lab)\r ├── controllers/\r │   ├── homeController.js      (Controller — home + restaurants)\r │   ├── aboutController.js     (Controller)\r │   ├── menuController.js      (Controller)\r │   └── orderController.js     (Controller — createOrder, DB insert coming next lab)\r ├── models/                    (Model — empty for now, Order.js arrives next lab)\r ├── routes/\r │   └── index.js               (Routing — /, /about, /menu, POST /orders)\r ├── views/\r │   ├── partials/\r │   │   ├── header.ejs         (View)\r │   │   └── footer.ejs         (View)\r │   ├── index.ejs              (View — hero + restaurants)\r │   ├── about.ejs              (View)\r │   ├── menu.ejs               (View — order forms)\r │   └── order_confirmation.ejs (View)\r ├── public/\r │   ├── css/\r │   │   └── styles.css\r │   └── js/\r ├── app.js\r ├── .env\r ├── .gitignore\r ├── nodemon.json\r └── package.json",
   "main": "index.js",
   "scripts": {
-  "start": "node app.js",
-  "dev": "nodemon app.js"
-}
-,
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wangpochojay/campus_eats.git"
@@ -23,7 +22,8 @@
   "dependencies": {
     "dotenv": "^17.4.2",
     "ejs": "^6.0.1",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "pg-promise": "^12.7.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
