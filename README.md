@@ -1,5 +1,5 @@
 # campus-eats/
-├── config/                    (data layer support — DB connection, next lab)
+├── config/                    (data layer support — DB connection, next lab)\\
 ├── controllers/
 │   ├── homeController.js      (Controller — home + restaurants)
 │   ├── aboutController.js     (Controller)
